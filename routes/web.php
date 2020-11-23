@@ -14,19 +14,8 @@ use App\Http\Controllers\HomeController;
 |
 */
 Route::get('/',[HomeController::class,'index']);
+Route::resource('posts',HomeController::class);
 // Route::get('contact',[HomeController::class,'contact']);
 // Route::get('about',[HomeController::class,'about']);
 
 
-// Route::get('contact', function () {
-//     $data = [
-//         'contact_key' => 'contact_value',
-//     ];
-//     return view('contact',compact('data'));
-// });
-// Route::get('about', function () {
-//     $data = [
-//         'about_key' => 'about_value',
-//     ];
-//     return view('about',compact('data'));
-// });
