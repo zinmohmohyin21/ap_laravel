@@ -28,6 +28,7 @@ class CreateCategoriesTable extends Migration
      */
     public function down()
     {
+        //test comment
         Schema::dropIfExists('categories');
     }
 }
