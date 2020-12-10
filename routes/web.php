@@ -13,9 +13,9 @@ use App\Http\Controllers\HomeController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/',[HomeController::class,'index']);
-Route::resource('posts',HomeController::class);
+//Route::get('/',[HomeController::class,'testroot'])->name('root');
+
 // Route::get('contact',[HomeController::class,'contact']);
 // Route::get('about',[HomeController::class,'about']);
 
-
+Route::resource('posts',HomeController::class);
